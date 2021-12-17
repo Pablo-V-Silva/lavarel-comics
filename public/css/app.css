@@ -11243,3 +11243,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.blueBanner {
+  background-color: #0282F9;
+}
+
+.searchbar_container {
+  border-bottom: 2px solid #0282F9;
+}

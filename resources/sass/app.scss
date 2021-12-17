@@ -1,2 +1,11 @@
 @use 'bootstrap';
 
+$brand_color: #0282F9;
+
+.blueBanner {
+  background-color: $brand_color;
+}
+
+.searchbar_container {
+  border-bottom: 2px solid $brand_color;
+}
