@@ -1,6 +1,7 @@
 @use 'bootstrap';
 
 $brand_color: #0282F9;
+$secondary_color: #303030;
 
 .blueBanner {
   background-color: $brand_color;
@@ -8,4 +9,67 @@ $brand_color: #0282F9;
 
 .searchbar_container {
   border-bottom: 2px solid $brand_color;
+  margin-left: auto;
+
+  .searchBtn {
+    background-color: transparent;
+    color: black;
+    border: 0;
+    font-size: 1.2em;
+  }
+}
+
+.navbarContain {
+  ul {
+    line-height: 130px;
+    margin-bottom: 0 !important; 
+
+    li {
+    line-height: 130px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      color: $brand_color;
+      border-bottom: 2px solid $brand_color;
+    }
+  }
+  }
+}
+/* /HEADER */
+
+
+.contacts_jumbo {
+  background-image: url('../img/footer-bg.jpg');
+  height: 450px;
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  h3 {
+    color: white;
+  }
+
+  li,
+  p {
+    color: #959595;
+  }
+
+  .dcLogoFooter {
+    background-image: url('../img/dc-logo-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+}
+
+.credits {
+  background-color: $secondary_color;
+  
+  .myBtn {
+    background-color: $secondary_color;
+    border: 3px solid $brand_color;
+    color: white;
+  }
 }

@@ -11249,8 +11249,29 @@ textarea.form-control-lg {
 
 .searchbar_container {
   border-bottom: 2px solid #0282F9;
+  margin-left: auto;
+}
+.searchbar_container .searchBtn {
+  background-color: transparent;
+  color: black;
+  border: 0;
+  font-size: 1.2em;
 }
 
+.navbarContain ul {
+  line-height: 130px;
+  margin-bottom: 0 !important;
+}
+.navbarContain ul li {
+  line-height: 130px;
+  border-bottom: 2px solid transparent;
+}
+.navbarContain ul li:hover {
+  color: #0282F9;
+  border-bottom: 2px solid #0282F9;
+}
+
+/* /HEADER */
 .contacts_jumbo {
   background-image: url("../img/footer-bg.jpg");
   height: 450px;
@@ -11271,4 +11292,13 @@ textarea.form-control-lg {
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+}
+
+.credits {
+  background-color: #303030;
+}
+.credits .myBtn {
+  background-color: #303030;
+  border: 3px solid #0282F9;
+  color: white;
 }
