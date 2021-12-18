@@ -2,6 +2,7 @@
 
 $brand_color: #0282F9;
 $secondary_color: #303030;
+$back_products: #1c1c1c;
 
 .blueBanner {
   background-color: $brand_color;
@@ -38,6 +39,51 @@ $secondary_color: #303030;
 /* /HEADER */
 
 
+.jumbo {
+  background-image: url('../img/jumbotron.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.currentSeries {
+
+
+  .title.series {
+    background-color: $brand_color;
+    width: 20%;;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: -1.4rem;
+    z-index: 1;
+  }
+
+  .productsContainer {
+    background-color: $back_products;
+    color: white;
+
+    .card {
+    min-height: 265px;
+    border: 0 !important;
+    background-color: $back_products;
+  }
+
+  .loadMoreBtn {
+    background-color: $brand_color;
+    border: 0;
+    color: white;
+  }
+  }
+}
+
+.merch {
+  background-color: $brand_color;
+  color: white;
+}
+/* /MAIN */
+
 .contacts_jumbo {
   background-image: url('../img/footer-bg.jpg');
   height: 450px;
@@ -73,3 +119,4 @@ $secondary_color: #303030;
     color: white;
   }
 }
+/* /FOOTER */
