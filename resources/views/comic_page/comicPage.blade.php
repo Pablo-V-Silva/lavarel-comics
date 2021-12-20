@@ -9,20 +9,36 @@
 </div>
 <!-- /Image thumb -->
 
-<div class="container">
-  <div class="row"></div>
-  <div class="col-8">
-  <h4 class="text-uppercase">{{ $comic['title'] }}</h4>
-  <div class="row comicPrice">
+<div class="container comicInfoContain py-5">
+  <div class="row">
     <div class="col-8">
-      <div class="comicValue">
-        U.S Price : {{$comic['price']}}
+      <h3 class="text-uppercase fs-2">{{ $comic['title'] }}</h3>
+      <div class="row backPrice my-4 mx-1">
+        <div class="col-8 d-flex justify-content-between py-4">
+          <div class="comicValue">
+            U.S Price : <span class="text-light">{{$comic['price']}}</span>
+          </div>
+          
+          <div class="disponibility text-uppercase">
+            available
+          </div>
+
+        </div>
+        <div class="col-4">
+          <select name="available" id="available" class="w-100 text-center available">
+            <option value="0" class="text-capitalize">check availibilty</option>
+          </select>
+        </div>
       </div>
+      <p>{{$comic['description']}}</p>
+
     </div>
-    <div class="col-4"></div>
+    <div class="col-4 prodpiazzamento text-end text-uppercase">
+      <h5 class="">advertisement</h5>
+      <img src="{{asset('img/prodpiazzamento.jpg')}}" alt="" class="w-100">
+    </div>
   </div>
-  </div>
-  <div class="col-4"></div>
+
 </div>
 <!-- /Comic info -->
 

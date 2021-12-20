@@ -3,6 +3,8 @@
 $brand_color: #0282F9;
 $secondary_color: #303030;
 $back_products: #1c1c1c;
+$back_comic_price : #55BA59;
+$comic_price: #A8F48E;
 
 .blueBanner {
   background-color: $brand_color;
@@ -90,6 +92,23 @@ $back_products: #1c1c1c;
   .comicThumb {
     position: absolute;
     bottom: 20%;
+  }
+}
+
+.comicInfoContain {
+
+  .available {
+    height: 100%;
+    width: 100%;
+    background-color: $back_comic_price;
+    color: white;
+    font-size: 1.2em;
+    border: 0;
+  }
+
+  .backPrice {
+    background-color: $back_comic_price;
+    color: $comic_price;
   }
 }
 /* /MAIN */
