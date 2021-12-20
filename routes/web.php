@@ -22,6 +22,10 @@ Route::get('/', function () {
 
 Route::get('comicPage/{id}', function($id) {
   $comics = config('comics');
-  $comic = $comics[$id];
-  return view('comic_page/comicPage', compact('comic'));
+  if ($id < count($comics) && is_numeric($id) && $id>=0) {
+    $comic = $comics[$id];
+    return view('comic_page/comicPage', compact('comic'));
+  } else {
+    abort('404');
+  };
 })->name('comicPage');
