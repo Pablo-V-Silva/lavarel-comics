@@ -98,6 +98,15 @@ $comic_info: #F6F6F6;
 
 .comicInfoContain {
 
+
+  .authors {
+    background-color: $comic_info;
+
+    .bb-3 {
+      border-bottom: 1px solid lightgray;
+    }
+  }
+
   .infoComic {
 
     .imgprodp {

@@ -11320,6 +11320,12 @@ textarea.form-control-lg {
   bottom: 20%;
 }
 
+.comicInfoContain .authors {
+  background-color: #F6F6F6;
+}
+.comicInfoContain .authors .bb-3 {
+  border-bottom: 1px solid lightgray;
+}
 .comicInfoContain .infoComic .imgprodp {
   height: 250px;
 }
