@@ -11258,6 +11258,9 @@ textarea.form-control-lg {
   font-size: 1.2em;
 }
 
+.navbarContain {
+  justify-content: center;
+}
 .navbarContain ul {
   line-height: 130px;
   margin-bottom: 0 !important;
@@ -11307,6 +11310,14 @@ textarea.form-control-lg {
 .merch {
   background-color: #0282F9;
   color: white;
+}
+
+.comicImage {
+  height: 100px;
+}
+.comicImage .comicThumb {
+  position: absolute;
+  bottom: 20%;
 }
 
 /* /MAIN */

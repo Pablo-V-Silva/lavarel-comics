@@ -72,11 +72,11 @@
           <div class="socials d-flex justify-content-end align-items-center py-3">
             <span class="text-uppercase fw-bold text-primary pe-3">follow us</span>
             <div class="socialIcons">
-              <img class="pe-2" src="img/footer-facebook.png" alt="">
-              <img class="pe-2" src="img/footer-twitter.png" alt="">
-              <img class="pe-2" src="img/footer-youtube.png" alt="">
-              <img class="pe-2" src="img/footer-pinterest.png" alt="">
-              <img src="img/footer-periscope.png" alt="">
+              <img class="pe-2" src="{{asset('img/footer-facebook.png')}}" alt="">
+              <img class="pe-2" src="{{asset('img/footer-twitter.png')}}" alt="">
+              <img class="pe-2" src="{{asset('img/footer-youtube.png')}}" alt="">
+              <img class="pe-2" src="{{asset('img/footer-pinterest.png')}}" alt="">
+              <img src="{{asset('img/footer-periscope.png')}}" alt="">
             </div>
           </div>
         </div>

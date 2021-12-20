@@ -1,10 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="jumbo position-relative"></div>
-<!-- / Initial Jumbo -->
-
-
 <div class="currentSeries position-relative">
   <div class="titleBannerSeries container">
     <div class="title series">
@@ -17,10 +13,10 @@
     <div class="container ">
       <div class="row row-cols-6 pt-5">
 
-        @foreach($comics as $comic)
+        @foreach($comics as $key => $comic)
         <div class="col">
           <div class="card h-100">
-            <img class="" src="{{$comic['thumb']}}" alt="{{$comic['type']}}">
+            <a href="{{route('comicPage', ['id'=> $key])}}"><img class="" src="{{$comic['thumb']}}" alt="{{$comic['type']}}"></a>
             <div class="productName">
               <h4>{{$comic['series']}}</h4>
             </div>
@@ -50,7 +46,5 @@
   </div>
 </div>
 <!-- /Merchandising -->
-
-
 
 @endsection

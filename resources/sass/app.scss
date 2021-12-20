@@ -21,6 +21,7 @@ $back_products: #1c1c1c;
 }
 
 .navbarContain {
+  justify-content: center;
   ul {
     line-height: 130px;
     margin-bottom: 0 !important; 
@@ -82,14 +83,23 @@ $back_products: #1c1c1c;
   background-color: $brand_color;
   color: white;
 }
+
+.comicImage {
+  height: 100px;
+
+  .comicThumb {
+    position: absolute;
+    bottom: 20%;
+  }
+}
 /* /MAIN */
 
 .contacts_jumbo {
   background-image: url('../img/footer-bg.jpg');
   height: 450px;
   background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 
   h3 {
     color: white;

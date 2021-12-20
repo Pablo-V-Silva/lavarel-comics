@@ -18,4 +18,10 @@ Route::get('/', function () {
   $merch = config('merch');
 
   return view('homepage', compact('comics', 'merch'));
-});
+})->name('homepage');
+
+Route::get('comicPage/{id}', function($id) {
+  $comics = config('comics');
+  $comic = $comics[$id];
+  return view('comic_page/comicPage', compact('comic'));
+})->name('comicPage');
