@@ -5,6 +5,7 @@ $secondary_color: #303030;
 $back_products: #1c1c1c;
 $back_comic_price : #55BA59;
 $comic_price: #A8F48E;
+$comic_info: #F6F6F6;
 
 .blueBanner {
   background-color: $brand_color;
@@ -97,6 +98,12 @@ $comic_price: #A8F48E;
 
 .comicInfoContain {
 
+  .infoComic {
+
+    .imgprodp {
+      height: 250px;
+    }
+  }
   .available {
     height: 100%;
     width: 100%;
@@ -110,6 +117,10 @@ $comic_price: #A8F48E;
     background-color: $back_comic_price;
     color: $comic_price;
   }
+}
+
+.specs {
+  background-color: $comic_info;
 }
 /* /MAIN */
 

@@ -11320,6 +11320,9 @@ textarea.form-control-lg {
   bottom: 20%;
 }
 
+.comicInfoContain .infoComic .imgprodp {
+  height: 250px;
+}
 .comicInfoContain .available {
   height: 100%;
   width: 100%;
@@ -11331,6 +11334,10 @@ textarea.form-control-lg {
 .comicInfoContain .backPrice {
   background-color: #55BA59;
   color: #A8F48E;
+}
+
+.specs {
+  background-color: #F6F6F6;
 }
 
 /* /MAIN */

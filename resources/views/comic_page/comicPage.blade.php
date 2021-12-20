@@ -9,8 +9,8 @@
 </div>
 <!-- /Image thumb -->
 
-<div class="container comicInfoContain py-5">
-  <div class="row">
+<div class="container comicInfoContain">
+  <div class="row infoComic pt-5">
     <div class="col-8">
       <h3 class="text-uppercase fs-2">{{ $comic['title'] }}</h3>
       <div class="row backPrice my-4 mx-1">
@@ -35,10 +35,76 @@
     </div>
     <div class="col-4 prodpiazzamento text-end text-uppercase">
       <h5 class="">advertisement</h5>
-      <img src="{{asset('img/prodpiazzamento.jpg')}}" alt="" class="w-100">
+      <img src="{{asset('img/prodpiazzamento.jpg')}}" alt="" class="w-100 imgprodp">
     </div>
   </div>
 
+
+  <div class="specs">
+    <div class="row row-cols-2">
+    <div class="col">
+      <h4>Talent</h4>
+      <div class="art row">
+        <div class="col-4">Art by :</div>
+        <div class="col-8"> 
+          @foreach($comic['artists'] as $artist)
+          <span class="text-primary">{{$artist}}</span>
+          @if (!$loop->last)
+          <span>,</span>
+          @endif
+          @endforeach
+
+        </div>
+
+      </div>
+      <div class="scripting row">
+        <div class="col-4">
+          Written by :
+        </div>
+        <div class="col-8"> 
+          @foreach($comic['writers'] as $writer)
+          <span class="text-primary">{{$writer}}</span>
+          @if (!$loop->last)
+          <span>,</span>
+          @endif
+          @endforeach
+        </div>
+      </div>
+    
+    </div>
+    <div class="col">
+      <h4>Specs</h4>
+      <div class="written row">
+        <div class="col-4">Series :</div>
+        <div class="col-8 text-uppercase text-primary"> 
+          
+          {{$comic['series']}}
+          
+        </div>
+
+      </div>
+      <div class="price row">
+        <div class="col-4">U.S. Price :</div>
+        <div class="col-8 text-uppercase"> 
+          
+          {{$comic['price']}}
+          
+        </div>
+      </div>
+      
+      <div class="sale-date row">
+        <div class="col-4 text-capitalize">on sale date :</div>
+        <div class="col-8 text-uppercase"> 
+          
+          {{$comic['sale_date']}}
+          
+        </div>
+
+      </div>
+    
+    </div>
+  </div>
+  </div>
 </div>
 <!-- /Comic info -->
 
