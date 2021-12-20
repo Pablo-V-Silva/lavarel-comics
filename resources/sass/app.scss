@@ -31,12 +31,16 @@ $comic_info: #F6F6F6;
 
     li {
     line-height: 130px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 4px solid transparent;
 
+    
     &:hover {
       color: $brand_color;
-      border-bottom: 2px solid $brand_color;
+      border-bottom: 4px solid $brand_color;
     }
+  }
+  .on {
+    border-bottom: 4px solid $brand_color;
   }
   }
 }

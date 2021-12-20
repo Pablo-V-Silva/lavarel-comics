@@ -11267,11 +11267,14 @@ textarea.form-control-lg {
 }
 .navbarContain ul li {
   line-height: 130px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 4px solid transparent;
 }
 .navbarContain ul li:hover {
   color: #0282F9;
-  border-bottom: 2px solid #0282F9;
+  border-bottom: 4px solid #0282F9;
+}
+.navbarContain ul .on {
+  border-bottom: 4px solid #0282F9;
 }
 
 /* /HEADER */

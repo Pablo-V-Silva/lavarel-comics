@@ -16,15 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
   $comics = config('comics');
   $merch = config('merch');
+  $links = config('headerLinks');
 
-  return view('homepage', compact('comics', 'merch'));
-})->name('homepage');
+  return view('homepage', compact('comics', 'merch', 'links'));
+})->name('comics');
 
 Route::get('comicPage/{id}', function($id) {
   $comics = config('comics');
+  $links = config('headerLinks');
+
   if ($id < count($comics) && is_numeric($id) && $id>=0) {
     $comic = $comics[$id];
-    return view('comic_page/comicPage', compact('comic'));
+    return view('comic_page/comicPage', compact('comic','links'));
   } else {
     abort('404');
   };

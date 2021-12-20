@@ -7,19 +7,12 @@
   </div>
 
   <div class="navbarContain d-flex align-items-center w-75 mx-auto">
-    <a href="{{route('homepage')}}"><img src="{{asset('img/dc-logo.png')}}" alt="" height="100px"></a>
+    <a href="{{route('comics')}}"><img src="{{asset('img/dc-logo.png')}}" alt="" height="100px"></a>
     <nav class="w-100">
       <ul class="list-unstyled d-flex justify-content-around">
-        <li class="text-uppercase pe-3"><a>caracthers</a></li>
-        <li class="text-uppercase pe-3"><a >comics</a></li>
-        <li class="text-uppercase pe-3"><a>movies</a></li>
-        <li class="text-uppercase pe-3"><a>tv</a></li>
-        <li class="text-uppercase pe-3"><a>games</a></li>
-        <li class="text-uppercase pe-3"><a>collectionables</a></li>
-        <li class="text-uppercase pe-3"><a>videos</a></li>
-        <li class="text-uppercase pe-3"><a>fans</a></li>
-        <li class="text-uppercase pe-3"><a>news</a></li>
-        <li class="text-uppercase pe-3"><a>shop</a></li>
+        @foreach ($links as $link)
+        <li class="text-uppercase pe-3 {{Route::currentRouteName() == $link ? 'on' : ''}}"><a>{{$link}}</a></li>
+        @endforeach
       </ul>
     </nav>
     <form action="/" class="">
