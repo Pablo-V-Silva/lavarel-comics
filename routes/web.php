@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
   $comics = config('comics');
   $merch = config('merch');
   $links = config('headerLinks');
@@ -31,4 +32,9 @@ Route::get('comicPage/{id}', function($id) {
   } else {
     abort('404');
   };
-})->name('comicPage');
+})->name('comicPage'); */
+
+
+Route::get('/', 'ComicController@index')->name('comics');
+
+Route::get('/comics{comic}', 'ComicController@show')->name('comic');

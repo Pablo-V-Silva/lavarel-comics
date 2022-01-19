@@ -8,7 +8,7 @@
     </div>
   </div>
 
-    
+
   <div class="productsContainer">
     <div class="container ">
       <div class="row row-cols-6 pt-5">
@@ -16,7 +16,7 @@
         @foreach($comics as $key => $comic)
         <div class="col">
           <div class="card h-100">
-            <a href="{{route('comicPage', ['id'=> $key])}}"><img class="" src="{{$comic['thumb']}}" alt="{{$comic['type']}}"></a>
+            <a href="{{route('comic', $comic->id)}}"><img class="" src="{{$comic->thumb}}" alt="{{$comic->type}}"></a>
             <div class="productName">
               <h4>{{$comic['series']}}</h4>
             </div>
@@ -29,11 +29,11 @@
       </div>
     </div>
   </div>
-  
+
 </div>
 <!-- / Series section -->
 
-<div class="merch">
+<!-- <div class="merch">
   <div class="container">
     <div class="row row-cols-5 py-4">
       @foreach ($merch as $product)
@@ -44,7 +44,7 @@
       @endforeach
     </div>
   </div>
-</div>
+</div>  -->
 <!-- /Merchandising -->
 
 @endsection
